@@ -14,7 +14,7 @@ Quickstart
 
 Just paste this into a terminal:
 
-    curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | bash
+    curl -s https://raw.githubusercontent.com/DrkCloudStrife/ievms/master/ievms.sh | bash
 
 
 Requirements
@@ -25,7 +25,7 @@ Requirements
 * Linux Only: unar (Ubuntu: `sudo apt-get install unar`)
 * Patience
 
-**NOTE** Use [ievms version 0.2.1](https://github.com/xdissent/ievms/raw/v0.2.1/ievms.sh) for VirtualBox < 5.0.
+**NOTE** Use [ievms version 0.2.1](https://github.com/DrkCloudStrife/ievms/raw/v0.2.1/ievms.sh) for VirtualBox < 5.0.
 
 
 Installation
@@ -37,11 +37,11 @@ Installation
 
    * To install IE versions 8, 9, 10, 11 and EDGE use:
 
-        `curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | bash`
+        `curl -s https://raw.githubusercontent.com/DrkCloudStrife/ievms/master/ievms.sh | bash`
 
    * To install specific IE versions (IE7, IE9 and EDGE only for example) use:
 
-        `curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env IEVMS_VERSIONS="7 9 EDGE" bash`
+        `curl -s https://raw.githubusercontent.com/DrkCloudStrife/ievms/master/ievms.sh | env IEVMS_VERSIONS="7 9 EDGE" bash`
 
 **3.)** Launch Virtual Box.
 
@@ -67,7 +67,7 @@ Specifying the install path
 
 To specify where the VMs are installed, use the `INSTALL_PATH` variable:
 
-    curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env INSTALL_PATH="/Path/to/.ievms" bash
+    curl -s https://raw.githubusercontent.com/DrkCloudStrife/ievms/master/ievms.sh | env INSTALL_PATH="/Path/to/.ievms" bash
 
 
 Passing additional options to curl
@@ -76,7 +76,7 @@ Passing additional options to curl
 The `curl` command is passed any options present in the `CURL_OPTS`
 environment variable. For example, you can set a download speed limit:
 
-    curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | env CURL_OPTS="--limit-rate 50k" bash
+    curl -s https://raw.githubusercontent.com/DrkCloudStrife/ievms/master/ievms.sh | env CURL_OPTS="--limit-rate 50k" bash
 
 
 Disk requirements
@@ -189,7 +189,7 @@ be successfully "rearmed" to extend the activation period.
 **NOTE:** If you'd like to disable Win7 VM reuse for IE10, set the environment
 variable `REUSE_WIN7` to anything other than `yes`:
 
-    curl -s https://raw.githubusercontent.com/xdissent/ievms/master/ievms.sh | REUSE_WIN7="no" bash
+    curl -s https://raw.githubusercontent.com/DrkCloudStrife/ievms/master/ievms.sh | REUSE_WIN7="no" bash
 
 
 **NOTE:** It is currently impossible to install IE11 **without** reusing the
